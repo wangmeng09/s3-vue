@@ -9,7 +9,7 @@ import 'mint-ui/lib/style.css'
 // import s3Vue from '../dist/bundle'
 
 Vue.use(MintUI)
-Vue.use(s3Vue)
+// Vue.use(s3vue)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

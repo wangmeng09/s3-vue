@@ -11,10 +11,6 @@ module.exports = {
     libraryTarget:'umd'
   },
   devtool: 'none',
-
-  externals: {
-     //'s3Vue':'window.s3vue'
-  },
   module: {
       rules: [
         {
@@ -22,17 +18,21 @@ module.exports = {
           loader:'vue-loader'
         },
         {
-        test: /(\.jsx|\.js)$/,
+
+          test: /\.js$/,
+          exclude: /node_modules/,
+        // test: /(\.jsx|\.js)$/,
         use: {
           loader: "babel-loader"
-        },
-        exclude: /node_modules/
+        }
       }
     ]
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
+      }
     })
   ]
 };
