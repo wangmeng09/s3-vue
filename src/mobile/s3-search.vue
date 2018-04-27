@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: "s3search",
+    name: "s3-search",
     data () {
       return {
         value:''

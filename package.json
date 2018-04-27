@@ -9,9 +9,12 @@
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run e2e",
-    "build": "node build/build.js"
+    "build": "NODE_ENV=production grunt build",
+    "webpack": "webpack"
   },
   "dependencies": {
+    "babel-loader": "^7.1.4",
+    "mint-ui": "^2.2.13",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
