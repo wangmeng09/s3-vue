@@ -33,7 +33,7 @@
 
 <script type="text/babel">
 
-  import s3Search from '@/components/s3-search.vue'
+  import s3Search from './s3-search.vue'
   /**
    * s3-popup
    * @param {string} [currentName] - 展示当前选中的值

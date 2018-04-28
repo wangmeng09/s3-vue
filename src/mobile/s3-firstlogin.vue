@@ -31,7 +31,7 @@
 <script>
 
   import { MessageBox } from 'mint-ui';
-  import s3Formvalcode from '@/components/s3-formValCode.vue'
+  import s3Formvalcode from './s3-formValCode.vue'
 
   export default {
     name:'s3-firstlogin',

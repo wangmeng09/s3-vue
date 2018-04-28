@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-
+    <s3-login></s3-login>
+    <s3-input></s3-input>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <s3-banner :images="images"></s3-banner>
@@ -82,12 +83,17 @@
         </a>
       </li>
     </ul>
+    <mt-button type="default">default</mt-button>
+    <mt-button type="primary">primary</mt-button>
+    <mt-button type="danger">danger</mt-button>
     <s3-bottom></s3-bottom>
   </div>
 </template>
 
 <script>
-  import S3Banner from "../mobile/s3-banner.vue";
+  import { Swipe, SwipeItem } from 'mint-ui';
+  import S3Login from "../mobile/s3-login.vue";
+  import S3Input from "../mobile/s3-input.vue";
 
   export default {
     name: 'HelloWorld',
@@ -103,8 +109,8 @@
       }
     },
     components:{
-      S3Banner
-//      s3Search
+      S3Input,
+      S3Login
     }
   }
 </script>

@@ -25,8 +25,7 @@
 
 <script>
 import { MessageBox } from 'mint-ui';
-import store from '@/store'
-import s3FirstLogin from '@/components/s3-firstlogin.vue'
+import s3FirstLogin from './s3-firstlogin.vue'
 
 export default {
   name:'s3-login',

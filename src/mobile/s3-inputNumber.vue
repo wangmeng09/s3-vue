@@ -53,7 +53,7 @@
 </template>
 <script>
 
-  import s3Input from '@/components/s3-input.vue'
+  import s3Input from './s3-input.vue'
   export default {
     name: 'S3InputNumber',
     inject: {
