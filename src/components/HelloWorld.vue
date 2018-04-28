@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
-    <s3-login></s3-login>
+    <!--<s3-login></s3-login>-->
     <s3-input></s3-input>
+    <s3-search></s3-search>
+    <async-component></async-component>
+    <s3-input-number></s3-input-number>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <s3-banner :images="images"></s3-banner>
@@ -94,6 +97,9 @@
   import { Swipe, SwipeItem } from 'mint-ui';
   import S3Login from "../mobile/s3-login.vue";
   import S3Input from "../mobile/s3-input.vue";
+  import S3Search from "../mobile/s3-search.vue";
+  import AsyncComponent from "../global/async-component/async-component.vue";
+  import S3InputNumber from "../mobile/s3-inputNumber.vue";
 
   export default {
     name: 'HelloWorld',
@@ -109,6 +115,9 @@
       }
     },
     components:{
+      S3InputNumber,
+      AsyncComponent,
+      S3Search,
       S3Input,
       S3Login
     }

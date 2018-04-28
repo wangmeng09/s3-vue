@@ -21,7 +21,7 @@ const s3vue = function (Vue,options) {
   //component
   Vue.component(CSSLoader.name,CSSLoader);
   Vue.component(JSLoader.name,JSLoader);
-  // Vue.component(AsyncComponent.name,AsyncComponent);
+  Vue.component(AsyncComponent.name,AsyncComponent);
   Vue.component(s3Banner.name,s3Banner);
   Vue.component(s3Bottom.name,s3Bottom);
   Vue.component(s3Card.name,s3Card);
