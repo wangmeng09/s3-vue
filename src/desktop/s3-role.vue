@@ -5,13 +5,14 @@
 </template>
 <script>
 export default {
+  name:'s3-role',
 	data () {
 		return {
 
 		}
 	},
 	mounted(){
-		
+
 	},
 	computed: {
 		roles () {

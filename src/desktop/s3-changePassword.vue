@@ -19,6 +19,7 @@
 
 <script>
 export default {
+  name:'s3-changePassword',
   data() {
     var oldPass = (rule, value, callback) => {
       if ( value === '') {

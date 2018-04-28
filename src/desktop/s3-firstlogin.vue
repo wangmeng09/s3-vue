@@ -3,7 +3,7 @@
 		<p class="title">首次登录</p>
 
 		<el-form label-position="left" :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-			
+
 			<el-form-item label="手机号" prop="phone">
 	        <el-input placeholder="请输入手机号" v-model.number="ruleForm.phone"></el-input>
 	    </el-form-item>
@@ -12,7 +12,7 @@
 	        <el-input style="width:190px;margin-right: 13px;" placeholder="请输入验证码" v-model.number="ruleForm.validatecode"></el-input>
 	        <el-button style="padding: 12px 10px;" type="primary" @click="getValidateCode">{{validatorText}}</el-button>
 	    </el-form-item>
-			
+
 			<el-form-item label="旧密码" prop="oldPassword">
 		    <el-input placeholder="请输入原密码" type="password" v-model="ruleForm.oldPassword" auto-complete="off"></el-input>
 		  </el-form-item>
@@ -42,6 +42,7 @@
 <script>
 
   export default {
+    name:'s3-firtlogin',
     props:{
       success: {
         type: String,
@@ -57,7 +58,7 @@
         }
         if (!Number.isInteger(value)) {
           return callback(new Error('请输入数字值'));
-        }  
+        }
         if (val.length !==11){
         	return callback(new Error('手机号位数不正确'));
         }
@@ -171,7 +172,7 @@
             s3.ajax('/publicKey',param,'usermanage').then(result => {
                console.log("key",result);
               if(result.retCode == '200') {
-                resolve(result) 
+                resolve(result)
               } else {
                 reject(result)
               }

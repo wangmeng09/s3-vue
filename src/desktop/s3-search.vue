@@ -54,8 +54,9 @@
 </template>
 
 <script>
-	
+
 	export default {
+	  name:'s3-search',
 		data(){
 			return {
 				value6: '',
