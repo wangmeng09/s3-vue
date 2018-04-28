@@ -770,7 +770,7 @@ var install = function install(Vue, options) {
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
-
+s3vue = install;
 module.exports = s3vue;
 module.exports.default = s3vue;
 
