@@ -10,7 +10,7 @@
 import Axios from 'axios'
 
 export default {
-  name: 'AsyncComponent',
+  name: 'async-component',
   props: {
     // 父组件提供请求地址
     url: {
