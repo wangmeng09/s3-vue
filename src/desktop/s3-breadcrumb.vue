@@ -6,7 +6,7 @@
 
 <script>
 export default{
-	name: 's3-breadCrumb',
+	name: 's3-breadcrumb',
 	props: {
 		list: {
 			type: Array,

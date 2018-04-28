@@ -42,7 +42,7 @@
 <script>
 
   export default {
-    name:'s3-firtlogin',
+    name:'s3-firstlogin',
     props:{
       success: {
         type: String,
