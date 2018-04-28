@@ -1,10 +1,8 @@
 <template>
   <div class="hello">
-    <!--<s3-login></s3-login>-->
-    <s3-input></s3-input>
-    <s3-search></s3-search>
-    <async-component></async-component>
-    <s3-input-number></s3-input-number>
+    <s3-login></s3-login>
+
+  <s3-header></s3-header>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <s3-banner :images="images"></s3-banner>
@@ -100,6 +98,7 @@
   import S3Search from "../mobile/s3-search.vue";
   import AsyncComponent from "../global/async-component/async-component.vue";
   import S3InputNumber from "../mobile/s3-inputNumber.vue";
+  import S3Header from "../desktop/s3-header.vue";
 
   export default {
     name: 'HelloWorld',
@@ -115,6 +114,7 @@
       }
     },
     components:{
+      S3Header,
       S3InputNumber,
       AsyncComponent,
       S3Search,

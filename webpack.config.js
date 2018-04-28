@@ -3,10 +3,10 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry:"./src/mobile.js",
+  entry:"./src/desktop.js",
   output: {
     path: __dirname + "/dist",
-    filename: "bundle.js",
+    filename: "bundle-desktop.js",
     library: 's3vue',
     libraryTarget:'umd'
   },
